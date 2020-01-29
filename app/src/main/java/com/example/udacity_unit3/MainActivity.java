@@ -32,6 +32,33 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
     }
 
+    public void minThreeForTeamA(View v){
+        scoreTeamA = scoreTeamA - 3;
+        displayForTeamA(scoreTeamA);
+        if (scoreTeamA < 2){
+            scoreTeamA = 0;
+            displayForTeamA(scoreTeamA);
+        }
+    }
+
+    public void minTwoForTeamA(View v){
+        scoreTeamA = scoreTeamA - 2;
+        displayForTeamA(scoreTeamA);
+        if (scoreTeamA < 1){
+            scoreTeamA = 0;
+            displayForTeamA(scoreTeamA);
+        }
+    }
+
+    public void minOneForTeamA(View v){
+        scoreTeamA = scoreTeamA - 1;
+        displayForTeamA(scoreTeamA);
+        if (scoreTeamA < 0){
+            scoreTeamA = 0;
+            displayForTeamA(scoreTeamA);
+        }
+    }
+
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
@@ -54,6 +81,34 @@ public class MainActivity extends AppCompatActivity {
     public void addOneForTeamB(View v){
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
+    }
+
+    public void minThreeForTeamB(View v){
+        scoreTeamB = scoreTeamB - 3;
+        displayForTeamB (scoreTeamB);
+        if (scoreTeamB < 2){
+            scoreTeamB = 0;
+            displayForTeamB(scoreTeamB);
+        }
+
+    }
+
+    public void minTwoForTeamB(View v){
+        scoreTeamB = scoreTeamB - 2;
+        displayForTeamB(scoreTeamB);
+        if (scoreTeamB < 1){
+            scoreTeamB = 0;
+            displayForTeamB(scoreTeamB);
+        }
+    }
+
+    public void minOneForTeamB(View v){
+        scoreTeamB = scoreTeamB - 1;
+        displayForTeamB(scoreTeamB);
+        if (scoreTeamB < 0){
+            scoreTeamB = 0;
+            displayForTeamB(scoreTeamB);
+        }
     }
 
     public void displayForTeamB(int score) {

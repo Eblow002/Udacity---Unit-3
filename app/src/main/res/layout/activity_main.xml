@@ -28,36 +28,90 @@
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
                 android:textColor="@android:color/black"
                 android:textSize="120dp" />
 
-            <Button
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_orange_dark"
-                android:onClick="addOneForTeamA"
-                android:text="Free Throw" />
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_orange_dark"
-                android:onClick="addTwoForTeamA"
-                android:text="+2 points" />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="addOneForTeamA"
+                    android:text="Free Throw" />
 
-            <Button
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="minOneForTeamA"
+                    android:text="-1" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_orange_dark"
-                android:onClick="addThreeForTeamA"
-                android:text="+3 points" />
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="addTwoForTeamA"
+                    android:text="+2 points" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="minTwoForTeamA"
+                    android:text="-2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="addThreeForTeamA"
+                    android:text="+3 points" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="minThreeForTeamA"
+                    android:text="-3" />
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -80,36 +134,90 @@
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
                 android:textColor="@android:color/black"
                 android:textSize="120dp" />
 
-            <Button
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_orange_dark"
-                android:onClick="addOneForTeamB"
-                android:text="Free Throw" />
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_orange_dark"
-                android:onClick="addTwoForTeamB"
-                android:text="+2 points" />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="addOneForTeamB"
+                    android:text="Free Throw" />
 
-            <Button
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="minOneForTeamB"
+                    android:text="-1" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@android:color/holo_orange_dark"
-                android:onClick="addThreeForTeamB"
-                android:text="+3 points" />
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="addTwoForTeamB"
+                    android:text="+2 points" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="minTwoForTeamB"
+                    android:text="-2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="addThreeForTeamB"
+                    android:text="+3 points" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:onClick="minThreeForTeamB"
+                    android:text="-3" />
+            </LinearLayout>
 
         </LinearLayout>
 
