@@ -2,6 +2,7 @@ package com.example.udacity_unit3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -117,6 +118,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void P(View v) {
+        findViewById(R.id.P).setBackgroundColor(Color.RED);
+    }
+
+
+
+
+
+
+
+
 
     public void reset(View v){
         scoreTeamB = 0;
@@ -124,9 +136,4 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
         displayForTeamA(scoreTeamA);
     }
-
-
-
-
-
 }
